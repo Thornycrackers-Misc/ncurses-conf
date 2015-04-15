@@ -9,3 +9,7 @@ all: conf.cpp
 
 clean:
 	rm -rf conf.o
+	
+# Handy function for showing the value of any make variable
+print-%: ; @echo $*=$($*)
+
